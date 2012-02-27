@@ -53,16 +53,19 @@ public class AndroidciserService extends AccessibilityService {
 
     private String eventToString(AccessibilityEvent event) {
         String str = "Event Type:  " + eventTypeToString(event.getEventType()) + "\n";
-        str += " Package:    " + event.getPackageName() + "\n";
-        str += " Class:      " + event.getClassName() + "\n";
-        str += " Description:" + event.getContentDescription() + "\n";
-        str += " Text:       " + event.getText() + "\n";
-        str += " Enabled:    " + event.isEnabled() + "\n";
-        str += " Password:   " + event.isPassword() + "\n";
-        str += " Checked:    " + event.isChecked() + "\n";
-        str += " Current:    " + event.getCurrentItemIndex() + "\n";
-        str += " From Index: " + event.getFromIndex() + "\n";
-        str += " Item Count: " + event.getItemCount() + "\n";
+        str += " Package:       " + event.getPackageName() + "\n";
+        str += " Class:         " + event.getClassName() + "\n";
+        str += " Description:   " + event.getContentDescription() + "\n";
+        str += " Text:          " + event.getText() + "\n";
+        str += " Enabled:       " + event.isEnabled() + "\n";
+        str += " Password:      " + event.isPassword() + "\n";
+        str += " Checked:       " + event.isChecked() + "\n";
+        str += " Current:       " + event.getCurrentItemIndex() + "\n";
+        str += " From Index:    " + event.getFromIndex() + "\n";
+        str += " Item Count:    " + event.getItemCount() + "\n";
+        str += " Added Count:   " + event.getAddedCount() + "\n";
+        str += " Removed Count: " + event.getRemovedCount() + "\n";
+        str += " Before Text:   " + event.getBeforeText() + "\n";
 
         return str;
     }
